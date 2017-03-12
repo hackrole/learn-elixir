@@ -31,6 +31,7 @@ defmodule Issues.Mixfile do
     [
       {:httpoison, "~> 0.4"},
       {:jsx, "~> 2.0"},
+      {:hackney, github: "benoitc/hackney"},
     ]
   end
 end
