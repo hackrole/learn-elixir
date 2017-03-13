@@ -7,4 +7,4 @@
                         'Elixir.Issues.TableFormatter']},
               {registered,[]},
               {vsn,"0.1.0"},
-              {extra_applications,[logger,httpoison]}]}.
+              {extra_applications,[logger,httpoison,jsx]}]}.
