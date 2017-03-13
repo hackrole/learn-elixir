@@ -4,6 +4,8 @@ defmodule Issues.Mixfile do
   def project do
     [app: :issues,
      version: "0.1.0",
+     name: "Issues",
+     source_url: "https://github.com/pragdave/issues",
      elixir: "~> 1.4",
      escript: escript_config,
      build_embedded: Mix.env == :prod,
@@ -33,6 +35,7 @@ defmodule Issues.Mixfile do
       {:httpoison, "~> 0.4"},
       {:jsx, "~> 2.0"},
       {:hackney, "~> 1.7.1"},
+      {:ex_doc, github: "elixir-lang/ex_doc"},
     ]
   end
 

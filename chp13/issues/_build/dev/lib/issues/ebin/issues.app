@@ -1,6 +1,6 @@
 {application,issues,
              [{applications,[kernel,stdlib,elixir,logger,httpoison,jsx,
-                             hackney]},
+                             hackney,ex_doc]},
               {description,"issues"},
               {modules,['Elixir.Issues','Elixir.Issues.CLI',
                         'Elixir.Issues.GithubIssues',
