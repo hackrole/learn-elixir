@@ -1,6 +1,10 @@
 defmodule Sequence.Server do
   use GenServer
 
+  def init(stash_pid) do
+    current_number = Sequence.Stash.get_value stash_pid
+    {:ok, {current_number, stash_pid}}
+  end
   def handle_call(:next_number, _from, current_number) do
     {:reply, current_number, current_number+1}
   end
@@ -21,9 +25,13 @@ defmodule Sequence.Server do
     [data: [{'State', "My current state is '#{inspect state}', and I'm happy"}]]
   end
 
+  def terminate(_reason, {current_number, stash_pid}) do
+    Sequence.Stash.save_value stash_pid, current_number
+  end
+
   # client api
-  def start_link(current_number) do
-    GenServer.start_link(__MODULE__, current_number, name: __MODULE__)
+  def start_link(stash_pid) do
+    GenServer.start_link(__MODULE__, stash_pid, name: __MODULE__)
   end
 
   def next_number do
