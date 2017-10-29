@@ -1,0 +1,3 @@
+[submodule "phoenix/phoenix_source"]
+	path = phoenix/phoenix_source
+	url = https://github.com/charleshan/programming-phoenix.git
