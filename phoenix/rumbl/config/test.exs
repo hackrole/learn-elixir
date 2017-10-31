@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :rumbl, Rumbl.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
-  password: "",
+  password: "root",
   database: "rumbl_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
