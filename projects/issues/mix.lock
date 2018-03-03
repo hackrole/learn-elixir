@@ -1,4 +1,6 @@
-%{"certifi": {:hex, :certifi, "1.0.0", "1c787a85b1855ba354f0b8920392c19aa1d06b0ee1362f9141279620a5be2039", [:rebar3], []},
+%{"bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], []},
+  "certifi": {:hex, :certifi, "1.0.0", "1c787a85b1855ba354f0b8920392c19aa1d06b0ee1362f9141279620a5be2039", [:rebar3], []},
+  "credo": {:hex, :credo, "0.6.1", "a941e2591bd2bd2055dc92b810c174650b40b8290459c89a835af9d59ac4a5f8", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, optional: false]}]},
   "earmark": {:hex, :earmark, "1.2.0", "bf1ce17aea43ab62f6943b97bd6e3dc032ce45d4f787504e3adf738e54b42f3a", [:mix], []},
   "ex_doc": {:git, "https://github.com/elixir-lang/ex_doc.git", "52e3571a53caa0aece1dcf39e967cad162e7e821", []},
   "hackney": {:hex, :hackney, "1.7.1", "e238c52c5df3c3b16ce613d3a51c7220a784d734879b1e231c9babd433ac1cb4", [:rebar3], [{:certifi, "1.0.0", [hex: :certifi, optional: false]}, {:idna, "4.0.0", [hex: :idna, optional: false]}, {:metrics, "1.0.1", [hex: :metrics, optional: false]}, {:mimerl, "1.0.2", [hex: :mimerl, optional: false]}, {:ssl_verify_fun, "1.1.1", [hex: :ssl_verify_fun, optional: false]}]},

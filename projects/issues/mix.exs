@@ -36,6 +36,7 @@ defmodule Issues.Mixfile do
       {:jsx, "~> 2.0"},
       {:hackney, "~> 1.7.1"},
       {:ex_doc, github: "elixir-lang/ex_doc"},
+      {:credo, "~> 0.5", only: [:dev, :test]},
     ]
   end
 
